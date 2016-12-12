@@ -1,0 +1,21 @@
+<ion-view view-title="跟团游">
+	<ion-content class="has-header" on-scroll-complete="scrollC()">
+		<ion-list>
+			<ion-item class="item-thumbnail-left fPositive" ng-repeat="find in list" href="#/findAll/{{find.id}}">
+				<img ng-src="{{find.imgs}}">
+			    <h2>{{find.describe}}</h2>
+			    <p>&yen;{{find.price}}起<span>{{find.num}}已购<i ng-show="{{find.flag}}">|{{find.grade}}分点评</i></span></p>
+			    <div class="findLogo">
+			    	{{find.way}}
+			    </div>
+			</ion-item>
+		</ion-list>
+		<ion-infinite-scroll ng-if="showR" on-infinite="getData()" immediate-check="false">
+		</ion-infinite-scroll>
+		<div class="loadFG" ng-show="loadFG">加载完成.....</div>
+		
+	</ion-content>
+	<div class="top" ng-click="goTop()" ng-if="showTop">
+		<i class="icon ion-arrow-up-a"></i>
+	</div>
+</ion-view>

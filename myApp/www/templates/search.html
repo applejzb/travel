@@ -1,0 +1,26 @@
+<ion-view hide-nav-bar="true">
+	<ion-header-bar class="sHeader bar-positive" align-title="center">
+		<button class="ion-ios-undo-outline icon button button-clear" ng-click="goFind()"></button>
+		<div class="title">搜索</div>
+	</ion-header-bar>
+	<ion-content>
+		<div class="list sAddress">
+			<div class="item item-input-inset">
+				 <button class="button button-icon ion-ios-location-outline light-bg">  {{address}}</button>
+			    <label class="item-input-wrapper">
+			      <i class="icon ion-search placeholder-icon"></i>
+			      <input type="text" placeholder="中文/拼音/首字母">
+			    </label>
+			    <button class="button button-light search-color">搜索</button>
+		  	</div>
+		</div>
+		<div class="hot">
+			<h1>热门搜索</h1>
+			<span ng-repeat="hotS in list">
+				{{hotS}}
+			</span>
+		</div>
+    </ion-content>
+
+
+</ion-view>

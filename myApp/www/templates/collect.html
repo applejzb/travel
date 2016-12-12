@@ -1,0 +1,17 @@
+<ion-view hide-nav-bar="true">
+	<ion-header-bar align-title="center" class="bar-positive">
+		<button class="button button-clear icon ion-ios-arrow-left" ng-click="goMy()"></button>
+		<div class="title">我的收藏</div>
+	</ion-header-bar>
+	<ion-content class="has-header">
+		<ion-list can-swipe="true">
+			<ion-item class="item item-divider">收藏产品列表</ion-item>
+			<ion-item class="item item-thumbnail-left" ng-repeat="collect in list">
+		      <img ng-src="{{collect.urlImg}}">
+		      <h2 class="collectH">{{collect.message}}</h2>
+		      <p class="collectP">&yen;{{collect.price}}起</p>
+		      <ion-option-button class="button-light icon ion-trash-a cDelete" ng-click="onDelete()"></ion-option-button>
+		    </ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

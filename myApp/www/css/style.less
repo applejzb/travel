@@ -1,0 +1,1070 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 193819 */
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.tab-item-active{
+    color: blue!important;
+}
+i.icon.ion-record{
+    &:before{
+        font-size: 13px!important;
+    }
+    
+}
+html,body{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.item-input-wrapper{
+    border-radius: 25px;
+}
+.erwei{
+    font-family: iconfont;
+    color: white;
+    font-size: 1.5rem;
+}
+.homeAddress{
+    font-size: 0.7rem!important;
+    i{
+        
+        &:before{
+           font-size: 1rem!important; 
+        }
+    }
+}
+.slideBoxImg,.abanner{
+    max-width: 100%;
+}
+.row{
+    background: white;
+.col{
+    text-align: center;
+    font-size: 0.6rem;
+    color: #333;
+    padding: 0.5rem 0;
+    div{
+        
+        color: white;
+        width: 70%;
+        height: 2rem;
+        margin: 0 auto;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+        &.gt{
+            background: red;
+            .g{
+                font-family:iconfont;
+                line-height: 2rem;
+            }
+        }
+        &.zy{
+            background: orange;
+            .z{
+                font-family:iconfont;
+                line-height: 2rem;
+            }
+        }
+        &.dd{
+            background: blue;
+            .d{
+                font-family:iconfont;
+                line-height: 2rem;
+            }
+        }
+        &.tj{
+            background: lightseagreen;
+            .t{
+                font-family:iconfont;
+                line-height: 2rem;
+            }
+        }
+        
+    }
+}
+}
+.listBg{
+    background: #666666!important;
+    .prof{
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        color: #333333;
+    }
+    .item{
+        padding:0;
+        position: relative;
+        .yLink{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .yIcon{
+            width: 100%;
+        }
+        figcaption{
+            
+            .Ymessage{
+                display: block;
+                padding: 0.3rem 0.5rem;
+                height: 2.5rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+            }
+            .yPrice{
+                position: absolute;
+                width: 4rem;
+                display: block;
+                bottom: 3.5rem;
+                text-align: center;
+                color: white;
+                left: 1rem;
+                height: 1rem;
+                line-height: 1rem;
+                background: red;
+            }
+            .yAddress{
+                width: 4rem;
+                background: rgba(0,0,0,.3);
+                font-size: 0.6rem;
+                position: absolute;
+                top: 0.5rem;
+                height: 1rem;
+                line-height: 1rem;
+                border-radius: 0.5rem;
+                display: block;
+                text-align: center;
+                color: white;
+                left: 1rem;
+            }
+            .yNum{
+                width: 4rem;
+                background: rgba(0,0,0,.3);
+                font-size: 0.6rem;
+                position: absolute;
+                bottom: 3.5rem;
+                height: 1rem;
+                line-height: 1rem;
+                border-radius: 0.5rem;
+                display: block;
+                text-align: center;
+                color: white;
+                right: 1rem;
+            }
+        }
+    }
+}
+//plane
+.pDivider{
+    height: 0.5rem;
+    background: #ddd;
+    width: 100%;
+}
+.pContainer{
+    padding:0.5rem 1rem;
+    position: relative;
+    height: 30rem;
+    .selectWay{
+        padding: 1rem 0;
+        font-size: 0;
+        border-bottom: 1px solid #ccc;
+        button{
+            width: 50%;
+            border-radius: 0;
+            padding: 0;
+        }
+        .activeButton{
+            background: lightblue;
+            color: white;
+        }
+    }
+    .selectGo,.selectGoB{
+        height: 100%;
+        background: white;
+        position: absolute;
+        top: 4.3rem;
+        .col-80{
+            .item{
+                border: 0;
+                border-bottom: 1px solid #CCCCCC;
+            }
+        }
+        .dh{
+            font-size: 3rem;
+            display: inline-block;
+            text-align: center;
+            margin:0.5rem;
+            color: red;
+            
+        }
+        .button-clear{
+            max-height: 4rem!important;
+        }
+        .time{
+            margin: 1rem 0;
+            border-bottom: 1px solid #CCCCCC;
+            label{
+                border: 0;
+            }
+        }
+    }
+}
+
+//详情
+.swiper-container{
+    img{
+        width: 100%;
+    }
+    height: 10rem;
+}
+.back{
+     color: blue!important;
+ }
+.dMess{
+    position: absolute;
+    bottom: 1.5rem;
+    width: 100%;
+    background: rgba(0,0,0,.2);
+    z-index: 2;
+    color: white;
+    padding-left: 1rem;
+    font-size: 0.7rem;
+}
+
+
+//my
+
+.contanier{
+.header{
+    background: white;
+    width: 100%;
+    height: 8rem;
+    background: url(../img/my-bg.jpg);
+    background-size: cover;
+    .loginM{
+        height: 5rem;
+        position: relative;
+        line-height: 2.5rem;
+        top: 2rem;
+        
+        .userImg{
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+        a{
+            color: white;
+            display: inline-block;
+            font-size: 0.8rem;
+            
+        }
+        .userName{
+            font-size: 1.4rem;
+            margin-left: 0.8rem;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+.dd{
+    overflow: hidden;
+    padding:1rem 0.5rem;
+    font-size: 0.9rem;
+    span{
+        font-size: 1rem;
+    }
+    a{
+        font-size: 0.7rem;
+        float: right;
+        color: #333333;
+        display: block;
+    }
+    border-bottom:1px solid #ccc;
+}
+.accountM{
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    border-bottom: 1px solid #CCCCCC;
+    .acM{
+        width: 25%;
+        text-align: center;
+        font-size: 0.7rem;
+        i{
+            height: 2.5rem;
+            display: block;
+            line-height: 3rem;
+            font-family: iconfont;
+            font-size: 1.6rem;
+            color: greenyellow;
+        }
+    }
+    
+}
+.list{
+    .icon{
+        font-family:iconfont;
+        font-size: 1.4rem;
+    };
+}
+}
+
+
+//login
+.loginV{
+   background:#1cc0a0; 
+}
+.login-bg{
+    background:#1cc0a0;
+    .Lheader{
+        width: 100%;
+        height: 2rem;
+        overflow: hidden;
+        .leftJ{
+           font-size: 2rem;
+           color: white; 
+        }
+        .register{
+            float: right;
+            display: block;
+            color: white;
+            font-size: 0.9rem;
+            padding-right: 1rem;
+            line-height: 2rem;
+        }
+    }
+    .logo{
+        width: 100%;
+        margin: 2rem 0;
+        text-align: center;
+        .yLogo{
+            font-family: iconfont;
+            color: orange;
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+        span{
+            color: white;
+            font-size: 1.5rem;
+            display: inline-block;
+            line-height: 2rem;
+        }
+    }
+    .form{
+        padding: 0 1rem;
+        box-sizing: border-box;
+        .user,.psd{
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #CCCCCC;
+        }
+        .formIcon{
+            font-family:iconfont;
+            color: #333333;
+            font-size: 2rem;
+            width: 20%;
+            text-align: center;
+            display: inline-block;
+        }
+        input{
+            background:#1cc0a0;
+            border: 0;
+            display: inline-block;
+            width: 40%;
+            color: white;
+            font-size: 1rem;
+        }
+        .sub{
+            margin-top: 1.5rem;
+            letter-spacing: 0.5rem;
+            font-size: 1.3rem;
+            color: blue;
+        }
+        span{
+            font-size: 0.7rem;
+        }
+        .forget-psd{
+            overflow: hidden;
+            a{
+                float: right;
+                color: white;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    p{
+        text-align: center;
+        margin-top:1.5rem;
+    }
+    .rest-account{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        height: 3rem;
+        background: #1cc0a0;
+        i{
+            font-family:iconfont;
+            color: white;
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        .wb,.qq,.zf{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background: rgba(0,0,0,.2);
+        }
+    }
+}
+
+//register
+.Register{
+   background:#1cc0a0; 
+   color: white;
+   .rBack{
+       color: white!important;
+   }
+   .login-bg{
+       h1{
+           color: white;
+           text-align: center;
+       }
+       padding: 0.5rem;
+       .regt{
+           width: 96%;
+           margin: 0 auto;
+           .tel{
+               border: 1px solid white;
+               width: 100%;
+              
+               margin: 1rem 0;
+               i{
+                   width: 5rem;
+                    height: 2rem;
+                   text-align: center;
+                   line-height: 2rem;
+                   display: inline-block;
+               }
+               input{
+                   background:#1cc0a0;
+                   width: 10rem;
+                   height: 2rem;
+                   display: inline-block;
+               }
+           }
+           .yzm{
+               width: 100%;
+                border: 1px solid white;
+              position: relative;
+               margin: 1rem 0;
+               i{
+                   
+                   width: 5rem;
+                   height: 2rem;
+                   text-align: center;
+                   line-height: 2rem;
+                   display: inline-block;
+               }
+               input{
+                   width:8rem;
+                   height: 2rem;
+                   background:#1cc0a0;
+                   display: inline-block;
+               }
+               button{
+                   position: absolute;
+                   right: 0;
+                   top: 0.1rem;
+                   
+                   background: white;
+                   height: 2rem;
+               }
+           }
+       }
+       .rButton{
+           font-size: 1rem;
+           color: black;
+           letter-spacing: 1rem;
+       }
+      
+   }
+}
+//userMager
+.scroll{
+    height: 100%;
+.userMg{
+    margin: 1rem 0;
+    height: 5rem;
+    .item-divider{
+        height: 4rem;
+    }
+}
+.uMButton{
+    position: absolute;
+    bottom: 5rem;
+    margin-left: 10%;
+    width: 80%;
+}
+}
+//address
+.addressM {
+    padding: 0.7rem 0;
+    margin: 0 0.7rem;
+    border-bottom: 1px solid #CCCCCC;
+    label{
+        display: block;
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
+}
+.item-divider{
+  font-size: 1.5rem;   
+}
+
+
+//目的地
+.headerH{
+  height: 2.5rem;
+    .item-input-wrapper{
+        background: #CCCCCC;
+        .placeholder-icon{
+            font-size: 1.3rem;
+        }
+    }
+}
+.aHeader{
+    position: relative;
+    img{
+        display: block;
+    }
+    p{
+        position:absolute;
+        top: 1rem;
+        color: white;
+        font-size: 0.7rem;
+        left: 1rem;
+        span{
+            display: block;
+            font-size: 1rem;
+            margin: 0.5rem 0 0 2rem;
+        }
+    }
+}
+.container{
+    h1{
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0.8rem 0;
+        position: relative;
+        background: #ddd;
+        margin: 0;
+        em{
+            width: 5rem;
+            height: 0.1rem;
+            position: absolute;
+            display: inline-block;
+            top: 1.3rem;
+            border-bottom: 1px solid #333;
+            &:nth-of-type(1){
+                left: 0;
+                margin-left: 1rem;
+            }
+            &:nth-of-type(2){
+                right: 0;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .addressWay{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        height:2.1rem;
+        background: white;
+        span{
+            width: 50%;
+            text-align: center;
+            height: 2rem;
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+        .moveBar{
+            width: 50%;
+            height:0.1rem;
+            background: blue;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    .addAll{
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+    .addressActive{
+        position: fixed;
+        top: 350px;
+        z-index: 666;
+    }
+}
+//allAddress
+.divider{
+    height: 1rem;
+    background: #ddd;
+}
+.addcontent{
+    top: 50px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    .left{
+        width: 25%;
+        height: 21rem;
+        background: #ddd;
+        span{
+            width: 100%;
+            display: inline-block;
+            height: 3rem;
+            line-height: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+           
+        }
+        .activeSpan{
+            border-bottom: 1px solid blue;
+            box-sizing: border-box;
+            background: white;
+        }
+    }
+    .right{
+        width: 75%;
+        background: #FFFFFF;
+        padding: 0.5rem;
+        span{
+            padding: 0.5rem 0.7rem;
+            display: inline-block;
+            border:1px solid #ddd;
+            border-radius: 0.3rem;
+            margin: 0.3rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+//gn
+.show{
+    .foreign{
+        position: relative;
+        
+        padding: 0;
+        .wgImg{
+            max-width: 100%;
+        }
+        h1{
+           position: absolute;
+           top: 1.5rem;
+           width: 100%;
+           color: white;
+           background: transparent;
+           text-align: center;
+           font-size: 1.3rem; 
+        }
+        p{
+            position: absolute;
+            top: 5rem;
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-size: 0.6rem; 
+        }
+        a{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+//find
+
+.bar .title{
+    font-size: 1rem;
+}
+.subtabs{
+    font-size: 1rem;
+}
+.tab-item-active{
+    color: blue;
+}
+.activeTabs{
+    color: blue!important;
+}
+.pane[hide-nav-bar="true"] .has-tabs-top{
+    top: 93px!important;
+}
+.pane[hide-nav-bar="true"] .findHeader{
+    top: 0!important;
+}
+.fPositive{
+    position: relative;
+    img{
+        display: block;
+    }
+    a{
+        padding-right:1rem!important;
+    }
+    .findLogo{
+        position: absolute;
+        width: 3rem;
+        height: 1.5rem;
+        top: 0;
+        left: 1rem;
+        font-size: 0.7rem;
+        color: white;
+        text-align: center;
+        background: url(../img/find/icon_tour1.png) no-repeat;
+        background-size: cover;
+    }
+    h2{
+        letter-spacing: 0.1rem;
+    }
+    p{
+        position: absolute;
+        bottom: 0.2rem;
+        font-size: 1rem;
+        color: red;
+        display: block;
+        overflow: hidden;
+        span{
+            font-size: 0.7rem;
+            color: #333333;
+            padding-left: 3.5rem;
+        }
+        i{
+            font-size: 0.7rem;
+            color: #333333;
+        }
+    }
+}
+.loadFG{
+    text-align: center;
+    padding: 1rem 0 3rem 0;
+}
+.top{
+    position: fixed;
+    bottom: 4rem;
+    width: 2.5rem;
+    right: 1rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    background: rgba(0,0,0,.2);
+    z-index: 66;
+    i{
+        color: red;
+        line-height: 2.5rem;
+        font-size: 2rem;
+    }
+}
+.slidebar{
+    height: 2rem;
+    font-size: 0;
+    position: relative;
+    button{
+        font-size: 1rem;
+        color: #000;
+        background: white;
+        border: 0;
+        width: 35%;
+        height: 1.8rem;
+    }
+    .moveSlideBar{
+        width: 35%;
+        height: 0.1rem;
+        background: blue;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+}
+//search
+
+.pane[hide-nav-bar="true"] .has-tabs-top.sHeader{
+    top: 0!important;
+}
+.sAddress{
+    .button-icon{
+       width: 4rem;
+       height: 2rem;
+       min-height: 2rem; 
+    }
+   .search-color{
+       color: blue!important;
+       background: #ddd;
+   }
+   .item{
+      background: #ddd!important;
+      height: 4rem; 
+   }
+   label{
+       i{
+           font-size: 1rem;
+       }
+       border-radius: 0;
+       background: white;
+       height: 2rem;
+       margin-left: 1rem;
+   }
+}
+.hot{
+    padding: 0.5rem;
+    h1{
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #CCCCCC;
+    }
+    span{
+        display: inline-block;
+        padding: 0.5rem 0.8rem;
+        margin: 0.3rem;
+        border-radius: 0.2rem;
+        border:1px solid #333333;
+    }
+}
+
+
+//product
+
+.header{
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 888;
+    line-height: 2rem;
+    background: transparent;
+    padding: 0 1rem;
+    overflow: hidden;
+    font-size: 1.5rem;
+    color: red;
+   
+    .pback{
+        float: left;
+        padding: 0 1rem 0 0;
+    }
+    .collect{
+        float: right;
+        margin: 0 0.5rem;
+    }
+    .share{
+        float: right;
+    }
+}
+.containers{
+    width: 100%;
+    position: relative;
+    .pImg{
+        max-width: 100%;
+    }
+    .slideBox{
+        height: 13rem;
+        background: transparent;
+    }
+    .slide-title{
+        position: absolute;
+        width: 100%;
+        top: 11rem;
+        padding: 0.5rem;
+        background: rgba(0,0,0,.2);
+        color: white;
+        overflow: hidden;
+        font-size: 0.8rem;
+        span{
+            float: right;
+        }
+    }
+    .pMessage{
+        width: 100%;
+       
+        .pProduce{
+            padding: 1rem 0.5rem;
+            .ptitle{
+                font-size: 0.8rem;
+                height: 3rem;
+                line-height: 1.5rem;
+                overflow: hidden;
+            }
+            .activePtitle{
+                height: 6rem;
+            }
+            .col-10{
+                line-height: 3rem;
+                font-size: 1.5rem;
+            }
+        }
+        .priceNum{
+            padding:0 0.5rem 0.5rem 0.5rem;
+            overflow: hidden;
+            border-bottom: 1px solid #ccc;
+            .price{
+                font-size: 1rem;
+                color: red;
+                float: left;
+            }
+            .pnum{
+                font-size: 0.8rem;
+                float: right;
+            }
+        }
+        .recommend{
+             padding:0 0.5rem;
+            .col{
+                dl{
+                    margin: 0;
+                }
+                dt{
+                    text-align: left;
+                    font-size: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+                dd{
+                    text-align: left;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        .item-divider{
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+        .selectTime{
+            padding: 1rem;
+            overflow: hidden;
+            i{
+                font-size: 1rem;
+            }
+            .tell{
+                float: right;
+                font-size: 1rem;
+                color: red;
+            }
+        }
+        .product{
+            background: white;
+            h1{
+                text-align: center;
+                font-size: 1rem;
+                padding: 0.5rem 0;
+                font-size: 1rem;
+                background: white;
+            }
+            .listPadd{
+                padding: 0!important;
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+        
+    }
+}
+.footer{
+    height: 3.5rem;
+    border-top: 1px solid #CCCCCC;
+    .row{
+        padding: 0 5px;
+    }
+    i{
+        font-size: 2rem;
+    }
+    .col-25{
+        text-align: center;
+        p{
+            font-size: 0.7rem;
+        }
+    }
+    .col-50{
+        button{
+             width: 100%;
+             height: 3rem;
+             background: orange;
+             color: white!important;
+             font-size: 1.3rem;
+             letter-spacing: 2px;
+        }
+        .activated{
+            background: white;
+            font-size: 1.3rem;
+            color: #000!important;
+        }
+    }
+}
+//收藏
+.collectH{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal!important;
+}
+.collectP{
+    color: red!important;
+    font-size: 1rem!important;
+    margin-top: 1rem!important;
+    text-align: right!important;
+}
+.item-divider{
+    font-size: 0.8rem!important;
+}
+.cDelete:before{
+    font-size: 2rem!important;
+    color: red!important;
+}
+.indentP{
+    color: red!important;
+    font-size: 1rem!important;
+    margin-top: 0rem!important;
+    overflow: hidden;
+    span{
+        float: right!important;
+      button{
+          width: 1rem;
+          height: 1rem;
+          font-size: 0.8rem;
+          text-align: center;
+          line-height: 1rem;
+          padding: 0;
+          border: 0;
+      }
+    }
+}
+.indentMessage{
+    //多行溢出省略
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal!important;
+    height: 2.6rem;
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+}

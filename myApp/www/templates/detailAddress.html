@@ -1,0 +1,20 @@
+<ion-view hide-nav-bar="true">
+	<ion-header-bar align-title="center" class="bar-positive">
+		<button class="button button-clear icon ion-ios-arrow-left" ng-click="goHome()"></button>
+		<div class="title">选择出发地</div>
+	</ion-header-bar>
+	<ion-content>
+		<div class="addressM">
+			<label>当前定位的城市</label>
+			<button class="button button-assertive">{{address}}</button>
+		</div>
+		<ion-list ng-repeat="data in adr">
+			<ion-item class="item item-divider">
+				{{data.flag}}
+			</ion-item>
+			<ion-item ng-repeat="items in data.name">
+				{{items}}
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

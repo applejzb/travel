@@ -1,0 +1,75 @@
+<ion-view hide-nav-bar="true">
+	<ion-content>
+	<div class="contanier">
+		<div class="header">
+			<div class="loginM">
+				<img ng-src="{{headIcon}}" class="userImg"/>
+				<a href="#/login" ng-show="!isUser">{{loginMessage}}</a>
+				<a href="#/userManger" ng-show="isUser" class="userName">{{user}}</a>
+			</div>
+		</div>
+		
+	    <div class="dd">
+	    	<span>我的订单</span>
+	    	<a href="javascript:void(0);">查看全部订单></a>
+	    </div>
+	    <div class="accountM">
+	    	<div class="acM">
+	    		<i class="sh">&#xe651;</i>
+	    		审核中
+	    	</div>
+	    	<div class="acM">
+	    		<i class="zh">&#xe633;</i>
+	    		待支付
+	    	</div>
+	    	<div class="acM">
+	    		<i class="cx">&#xe623;</i>
+	    		待出行
+	    	</div>
+	    	<div class="acM">
+	    		<i class="sh">&#xe68c;</i>
+	    		待点评
+	    	</div>
+	    </div>
+		
+		<div class="list">
+			<div class="item item-divider"></div>
+			<a class="item item-icon-left item-icon-right" href="javascript:void(0);">
+			    <i class="icon">&#xe6f9;</i>
+			    我的优惠劵
+			    <i class="icon ion-ios-arrow-right"></i>
+			</a>
+			<a class="item item-icon-left" href="javascript:void(0);">
+			    <i class="icon">&#xe61c;</i>
+			    我的积分 
+			</a>
+			<a class="item item-icon-left" href="#/collect">
+			    <i class="icon">&#xe628;</i>
+			    我的收藏
+			</a>
+			<a class="item item-icon-left" href="javascript:void(0);">
+			    <i class="icon">&#xe6f7;</i>
+			    我的留言
+			</a>
+			<a class="item item-icon-left" href="#/indent">
+			    <i class="icon">&#xe635;</i>
+			    我的定制订单
+			</a>
+			<a class="item item-icon-left" href="javascript:void(0);">
+			    <i class="icon">&#xe655;</i>
+			    非会员订单
+			</a>
+			<div class="item item-divider"></div>
+			<a class="item item-icon-left" href="javascript:void(0);">
+			    <i class="icon">&#xe61e;</i>
+			   常用旅客
+			</a>
+			<a class="item item-icon-left" href="javascript:void(0);">
+			    <i class="icon">&#xe622;</i>
+			   常用地址
+			</a>
+		</div>
+	</div>
+	</ion-content>
+</ion-view>
+

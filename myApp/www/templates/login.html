@@ -1,0 +1,54 @@
+<ion-view class="loginV" hide-nav-bar="true">
+	<ion-content class="login-bg">
+		<div class="Lheader">
+			<i class="icon button button-clear ion-ios-arrow-thin-left leftJ" ng-click="goback()"></i>
+     	    <a class="register" href="#/register">立即注册</a>
+		</div>
+		<div class="logo">
+			<i class="yLogo">&#xe61a;</i>
+			<span>蛇总旅游<br />
+			    shezong
+			</span>
+		</div>
+		    <form name="form" novalidate>
+			<div class="form">
+				<div class="user">
+					<label class="formIcon">&#xe60d;</label>
+					<input type="text" placeholder="用户名" name="user" ng-model="obj.user" required/>
+					<span style="color:red" ng-show="form.user.$dirty && form.user.$invalid">
+	  				<span ng-show="form.user.$error.required">用户名是必须的</span>
+	  				</span>
+				</div>
+				<div class="psd">
+					<label class="formIcon">&#xe61b;</label>
+					<input type="password" placeholder="密码" name="psd" ng-model="obj.psd" required/>
+					<span style="color:red" ng-show="form.psd.$dirty && form.psd.$invalid">
+	  				<span ng-show="form.psd.$error.required">用户名是必须的</span>
+	  				</span>
+				</div>
+				<div class="forget-psd">
+					<a href="javascript:;">忘记密码?</a>
+				</div>
+				<button class="button button-block sub" ng-click="login(obj.user,obj.psd)">登录</button>
+			</div>
+			</form>
+		<p>第三方账号登录</p>
+		<div class="rest-account row">
+			<div class="col">
+			<div class="wb">
+				<i>&#xe619;</i>
+			</div>
+			</div>
+			<div class="col">
+			<div class="qq">
+				<i>&#xe648;</i>
+			</div>
+			</div>
+			<div class="col">
+			<div class="zf">
+				<i>&#xe60f;</i>
+			</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

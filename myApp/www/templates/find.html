@@ -1,0 +1,52 @@
+<ion-view hide-nav-bar="true">
+	<ion-header-bar align-title="center" class="bar-positive findHeader">
+		<div class="title">发现</div>
+		<a class="button button-icon icon ion-ios-search" href="#/search"></a>
+	</ion-header-bar>
+	<div class="slidebar has-header bar-subheader">
+		<button ng-click="goAll()" ng-class="{'activeTabs':isTrue}">全部产品</button>
+		<button ng-click="goLocal()" ng-class="{'activeTabs':!isTrue}">当地游</button>
+		<div class="moveSlideBar" id="moveSlideBar" ng-style="{left:progressLeft,transition:progressTime}"></div>
+	</div>
+	<ion-content class="has-header has-subheader" on-scroll-complete="scrollC()" on-scroll="scrollBar()">
+		
+		<ion-slide-box on-touch="onTouch($event)"  show-pager="false" on-drag="onDrag($event)" on-release="onRelease($event)" delegate-handle="slidebox0">
+			<ion-slide>
+				<ion-list>
+					<ion-item class="item-thumbnail-left fPositive" ng-repeat="find in list" href="#/product/{{find.id}}">
+						<img ng-src="{{find.imgs}}">
+					    <h2>{{find.describe}}</h2>
+					    <p>&yen;{{find.price}}起<span>{{find.num}}已购<i ng-show="{{find.flag}}">|{{find.grade}}分点评</i></span></p>
+					    <div class="findLogo">
+					    	{{find.way}}
+					    </div>
+					</ion-item>
+				</ion-list>
+				<ion-infinite-scroll ng-if="showR" on-infinite="getData()" immediate-check="false">
+				</ion-infinite-scroll>
+				<div class="loadFG" ng-show="loadFG">加载完成.....</div>
+			</ion-slide>
+			<ion-slide>
+				<ion-list>
+					<ion-item class="item-thumbnail-left fPositive" ng-repeat="find in list" href="#/product/{{find.id}}">
+						<img ng-src="{{find.imgs}}">
+					    <h2>{{find.describe}}</h2>
+					    <p>&yen;{{find.price}}起<span>{{find.num}}已购<i ng-show="{{find.flag}}">|{{find.grade}}分点评</i></span></p>
+					    <div class="findLogo">
+					    	{{find.way}}
+					    </div>
+					</ion-item>
+				</ion-list>
+				<ion-infinite-scroll ng-if="showR" on-infinite="getData()" immediate-check="false">
+				</ion-infinite-scroll>
+				<div class="loadFG" ng-show="loadFG">加载完成.....</div>
+			</ion-slide>
+		</ion-slide-box>
+		
+		
+	</ion-content>
+	<div class="top" ng-click="goTop()" ng-if="showTop">
+		<i class="icon ion-arrow-up-a"></i>
+	</div>
+</ion-view>
+

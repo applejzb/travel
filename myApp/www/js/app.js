@@ -1,0 +1,173 @@
+
+var app=angular.module('myApp', ['ionic',"app.services"])
+
+app.run(function($ionicPlatform) {
+  $ionicPlatform.ready(function() {
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      cordova.plugins.Keyboard.disableScroll(true);
+
+    }
+    if (window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+  });
+})
+
+app.config(function ($stateProvider,$ionicConfigProvider,$urlRouterProvider) {
+	$ionicConfigProvider.tabs.position('buttom');
+	$ionicConfigProvider.tabs.style('standard');
+	$stateProvider.state('home',{
+		url:"/home",
+		views:{
+			view1:{
+				templateUrl:"templates/home.html",
+				controller:"ctrlHome"
+			}
+		}
+	}).state('address',{
+		url:"/address",
+		views:{
+			view2:{
+				templateUrl:"templates/address.html",
+				controller:"ctrlAddress"
+			}
+		}
+	}).state('find',{
+		url:"/find",
+		
+		views:{
+			view3:{
+				templateUrl:"templates/find.html",
+				controller:"ctrlFind"
+			}
+		}
+	}).state('my',{
+		url:"/my",
+		cache:false,
+		views:{
+			view4:{
+				templateUrl:"templates/my.html",
+				controller:"ctrlMy"
+			}
+		}
+	}).state('yDetail',{
+		url:"/yDetail/:id",
+		cache:false,
+		views:{
+			view1:{
+				templateUrl:"templates/yDetail.html",
+				controller:"ctrlDetail"
+			}
+		}
+	}).state('login',{
+		url:"/login",
+		cache:false,
+		views:{
+			view4:{
+				templateUrl:"templates/login.html",
+				controller:"ctrlLogin"
+			}
+		}
+	}).state('detailAddress',{
+		url:"/detailAddress",
+		cache:false,
+		views:{
+			view1:{
+				templateUrl:"templates/detailAddress.html",
+				controller:"ctrlDetailAddress"
+			}
+		}
+	}).state('search',{
+		url:"/search",
+		cache:false,
+		views:{
+			view3:{
+				templateUrl:"templates/search.html",
+				controller:"ctrlSearch"
+			}
+		}
+	}).state('allAddress',{
+		url:"/allAddress",
+		cache:false,
+		views:{
+			view2:{
+				templateUrl:"templates/allAddress.html",
+				controller:"ctrlAllAddress"
+			}
+		}
+	}).state('Packaged',{
+		url:"/Packaged",
+		cache:false,
+		views:{
+			view1:{
+				templateUrl:"templates/Packaged.html",
+				controller:"ctrlPackaged"
+			}
+		}
+	}).state('plane',{
+		url:"/plane",
+		cache:false,
+		views:{
+			view1:{
+				templateUrl:"templates/plane.html",
+				controller:"ctrlPlane"
+			}
+		}
+	})
+	.state('product',{
+		url:"/product/:id",
+		cache:false,
+		views:{
+			view3:{
+				templateUrl:"templates/product.html",
+				controller:"ctrlProduct"
+			}
+		}
+	})
+	.state('collect',{
+		url:"/collect",
+		cache:false,
+		views:{
+			view4:{
+				templateUrl:"templates/collect.html",
+				controller:"ctrlCollect"
+			}
+		}
+	})
+	.state('indent',{
+		url:"/indent",
+		cache:false,
+		views:{
+			view4:{
+				templateUrl:"templates/indent.html",
+				controller:"ctrlIndent"
+			}
+		}
+	})
+	.state('register',{
+		url:"/register",
+		cache:false,
+		views:{
+			view4:{
+				templateUrl:"templates/register.html",
+				controller:"ctrlRegister"
+			}
+		}
+	})
+	.state('userManger',{
+		url:"/userManger",
+		cache:false,
+		views:{
+			view4:{
+				templateUrl:"templates/userManger.html",
+				controller:"ctrluserManger"
+			}
+		}
+	})
+	// if none of the above states are matched, use this as the fallback
+	$urlRouterProvider.otherwise('home');
+});

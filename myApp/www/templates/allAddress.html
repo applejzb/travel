@@ -1,0 +1,19 @@
+<ion-view view-title="全部目的地">
+	<ion-content>
+		<div class="divider"></div>
+		<div class="main">
+			<div class="left">
+				<span ng-click="hot()" ng-class="{'activeSpan':hots}">当季热卖游</span>
+				<span ng-click="circum()" ng-class="{'activeSpan':circums}">周边游</span>
+				<span ng-click="inland()" ng-class="{'activeSpan':inlands}">国内</span>
+				<span ng-click="leaveC()" ng-class="{'activeSpan':leaveCs}">出境</span>
+				<span ng-click="cruise()" ng-class="{'activeSpan':cruises}">游轮</span>
+				<span ng-click="ticker()" ng-class="{'activeSpan':tickers}">门票</span>
+				<span ng-click="vise()" ng-class="{'activeSpan':vises}">签证</span>
+			</div>
+			<div class="right">
+				<span ng-repeat="bourn in list">{{bourn}}</span>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

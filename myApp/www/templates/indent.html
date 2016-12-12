@@ -1,0 +1,23 @@
+<ion-view hide-nav-bar="true">
+	<ion-header-bar align-title="center" class="bar-positive">
+		<button class="button button-clear icon ion-ios-arrow-left" ng-click="goMy()"></button>
+		<div class="title">我的订单</div>
+	</ion-header-bar>
+	<ion-content class="has-header">
+		<ion-list can-swipe="true">
+			<ion-item class="item item-divider">订单列表</ion-item>
+			<ion-item class="item item-thumbnail-left" ng-repeat="indent in list">
+		      <img ng-src="{{indent.urlImg}}">
+		      <h2 class="indentMessage">{{indent.message}}</h2>
+		      <p class="indentP">
+		      	&yen;{{indent.price}}起
+		      	<span>
+		      		<button class="subtract" ng-click='subtract()'>-</button>
+		      			{{indent.num}}
+		      		<button class="add" ng-click='add()'>+</button>
+		     	</span>
+		      </p>
+		    </ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
